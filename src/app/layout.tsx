@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sudoko App",
-  description: "sudoko app",
+  title: "Sudoku App",
+  description: "sudoku app",
 };
 
 export default function RootLayout({
