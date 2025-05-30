@@ -1,5 +1,7 @@
 # 🧩 Sudoku Game – Next.js + TypeScript + Tailwind CSS
 
+🔗 Live Demo: https://sudoku-app-ten-tan.vercel.app/
+
 A fully functional and styled Sudoku game built with **Next.js** and **TypeScript** without relying on any Sudoku generation or validation libraries. Tailwind CSS is used for responsive styling, and Jest is used for writing basic unit tests.
 
 Interview Challenge – Completed in 2 hours
