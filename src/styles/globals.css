@@ -1,0 +1,123 @@
+/* GLOBAL BASE */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #134e4a;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* LANDING PAGE */
+.landing-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #134e4a;
+  color: #fef9c3;
+}
+
+.landing-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.play-button {
+  background-color: #facc15;
+  color: #064e3b;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.play-button:hover {
+  background-color: #eab308;
+}
+
+/* GAME TITLE */
+.page-title {
+  color: #fef9c3;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* SUDOKU GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 48px);
+  gap: 2px;
+  background-color: #1e293b;
+  padding: 8px;
+  border: 4px solid #1e3a8a;
+  border-radius: 8px;
+}
+
+/* CELL STYLES */
+.cell {
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.cell:focus {
+  outline: 2px solid #f59e0b;
+}
+
+.greenTile {
+  background-color: #a7f3d0;
+  color: #064e3b;
+}
+
+.yellowTile {
+  background-color: #fef9c3;
+  color: #78350f;
+}
+
+.readonly {
+  font-weight: bold;
+}
+
+.editable {
+  color: #3f3f46;
+}
+
+/* CORRECTNESS STYLES */
+.correct {
+  border: 2px solid #22c55e !important;
+}
+
+.incorrect {
+  border: 2px solid #ef4444 !important;
+  background-color: #fecaca !important;
+}
+
+/* MODAL STYLING */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  color: #064e3b;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  text-align: center;
+}
